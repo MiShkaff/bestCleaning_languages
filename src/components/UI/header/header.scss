@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+.container {
+    @include container()
+}
+.header {
+    padding: 15px 0px;
+}
+.header__big {
+    display: flex;
+    justify-content: space-between;
+}
+.headerList {
+    display: flex;
+}
+.headerList__item:not(:last-child) {
+    margin-right: 50px;
+}
+.headerList__link {
+    transition: $transition;
+    color:black;
+}
+.headerList__link:hover {
+    color:$orange-color
+}
+.dropdown {
+    position: relative;
+    user-select: none;
+    .dropdown__btn {
+        transition: $transition;
+        cursor:pointer;
+        &:hover {
+            color: $orange-color
+        }
+    }
+    .dropdown__content {
+        position:absolute;
+        top: 110%;
+        padding: 15px;
+        box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+        color:#333;
+    }
+    .dropdown__item {
+        padding: 10px;
+        box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+        cursor:pointer;
+        &:hover {
+            background-color: #fcfcfc;
+        }
+    }
+}
