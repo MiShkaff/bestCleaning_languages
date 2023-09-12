@@ -1,11 +1,11 @@
-import React from 'react'
 
-const AboutCompany = () => {
+const About = () => {
+    // debugger
   return (
-    <div>
-      This is a text about our company
+    <div className='about'>
+      about
     </div>
   )
 }
 
-export default AboutCompany
+export default About

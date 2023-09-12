@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "header_lists",
+  "info": {
+    "singularName": "header-list",
+    "pluralName": "header-lists",
+    "displayName": "headerList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "LinkName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "SelectLinkName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

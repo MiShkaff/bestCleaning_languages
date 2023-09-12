@@ -1,9 +1,5 @@
 @import '../../../variables.scss';
 @import '../../../mixins.scss';
-
-.container {
-    @include container()
-}
 .header {
     padding: 15px 0px;
 }
@@ -24,29 +20,37 @@
 .headerList__link:hover {
     color:$orange-color
 }
-.dropdown {
+.headerList__dropdown {
     position: relative;
     user-select: none;
-    .dropdown__btn {
+    .headerList__dropdown-btn {
         transition: $transition;
         cursor:pointer;
         &:hover {
             color: $orange-color
         }
     }
-    .dropdown__content {
+    .headerList__dropdown-content {
+        display: block;
         position:absolute;
+        right: 50%;
         top: 110%;
-        padding: 15px;
-        box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+        // padding: 15px;
+        // box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
         color:#333;
     }
-    .dropdown__item {
+    .headerList__dropdown-item {
         padding: 10px;
         box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
         cursor:pointer;
+        background-color: white;
+
         &:hover {
             background-color: #fcfcfc;
         }
     }
+}
+.header__lengs {
+    display: flex;
+    align-items: center;
 }

@@ -1,15 +1,12 @@
-import HeaderList from '../../elements/headerBig/headerList/headerList'
-import HeaderLogo from '../../elements/headerBig/headerLogo/headerLogo'
+import HeaderBig from "../../fixed/headerBig/headerBig"
+// import Page from "./[id]"
 
 const Header = (props) => {
+  // console.log(props.data)
   return (
     <div className='header'>
-        <div className="container">
-            <div className="header__big">
-                <HeaderLogo />
-                <HeaderList aboutSelected = {props.aboutSelected} aboutSetSelected={props.aboutSetSelected} />
-            </div>
-        </div>
+      <HeaderBig data={props.data} />
+      {/* <Page data={props.data} /> */}
     </div>
   )
 }

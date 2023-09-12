@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 ul {
     margin: 0px;
     padding: 0px;
@@ -10,4 +12,14 @@ a {
 }
 button {
     cursor:pointer
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0px;
+}
+.App {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, white 0%, white 70%, #b7b7b7 100%);
+}
+.container {
+    @include container();
 }

@@ -1,0 +1,93 @@
+@import '../../../variables.scss';
+
+.main-hero {
+    background-image: url('https://cdn.xxl.thumbs.canstockphoto.com/vegetables-and-some-fruits-this-is-a-close-up-of-vegetables-and-some-fruits-stock-photo_csp2521094.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-bottom: 30px;
+}
+.main-services {
+    width: 500px;
+    padding: 0px 30px 40px;
+    box-shadow: 0 3px 10px #E6E6E6;
+    margin-right: 30px;
+    .main-services__head {
+        margin-bottom: 20px;
+        padding: 0px 25% 10px 0px;
+        font-size: 24px;
+        font-weight: 400;
+        border-bottom: 4px solid $blue-color;
+        color:$orange-color
+    }
+    .main-services__item {
+        padding-bottom: 7px;
+        font-size: 14px;
+        font-style: normal;
+        color:#646464;
+        &:not(:last-child) {
+            margin-bottom: 7px;
+            border-bottom: 3px solid $orange-color;
+        }
+    }
+}
+.main-services__contentBlock {
+    display: flex;
+}
+.mainServ {
+    padding: 0px 30px 40px;
+    background-color: #ECEEEF;
+}
+.mainServ__head {
+    margin-bottom: 20px;
+    padding: 0px 25% 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 4px solid $blue-color;
+    color:$orange-color
+}
+.mainServ__desc {
+    display: block;
+    max-width: 500px;
+    font-size: 13px;
+    font-weight: 400;
+    color:$gray-color;
+}
+.mainServ__descBlock:not(:last-child) {
+    margin-bottom: 10px;
+}
+.main-services__dropdown {
+    visibility: hidden;
+    display: block;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    
+}
+.main-services__dropdown.open {
+    // z-index: 3;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+    padding: 10px;
+}
+.main-services__item {
+    height: 20px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.main-services__item-header {
+    cursor: pointer;
+}
+.main-services__dropdown-item {
+    color:red;
+    display: block;
+}
+.partnersImg {
+    width: 200px;
+    height: 200px;
+}

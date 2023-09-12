@@ -1,0 +1,41 @@
+.footerBig {
+    display: flex;
+    // justify-content: space-between;
+    .footerLeft {
+        display: flex;
+        margin-right: 50px;
+        .footerLeft__left {
+            margin-right: 30px;
+        }
+    }
+    .footerLeftCard {
+        position: relative;
+        padding-left: 13px;
+        .footerLeftCard__head {
+            font-size: 15px;
+            font-weight: 400;
+            color: #646464;
+            // position: relative;
+            &::before {
+                position: absolute;
+                left: 0px;
+                top:7px;
+                content: "";
+                // margin-left: 10px;
+                width: 5px;
+                height: 5px;
+                background-color: #646464;
+                border-radius: 50%;
+            }
+        }
+        .footerLeftCard__link {
+            font-size: 12px;
+            font-weight: 400;
+            color: #646464
+        }
+    }
+    
+}
+.footerLeftCard:not(:last-child) {
+    margin-bottom: 15px;
+}
