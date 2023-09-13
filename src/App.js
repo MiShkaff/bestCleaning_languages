@@ -1,19 +1,8 @@
 import './App.scss';
-import Header from './components/UI/header/header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Gallery from './components/UI/gallery/gallery'
-import Services from './components/UI/services/services'
-import Contacts from './components/UI/contacts/contacts'
-import AboutCompany from './components/UI/about/aboutCompany/aboutCompany';
 import useFetch from './hooks/useFetch';
-import Main from './components/UI/main/main';
-import MainHero from './components/fixed/mainBig/mainHero/mainHero';
-import MainServices from './components/fixed/mainBig/mainServices/mainServices';
-import MainServ from './components/elements/mainEl/mainServ';
-import Footer from './components/UI/footer/footer';
 import { useEffect, useState } from 'react';
-import ContentArm from './components/arm/contentArm';
-import Partners from './components/elements/partners/partners';
+import PageArm from './components/arm/pageArm';
 import PageEn from './components/en/pageEn';
 
 function App(props) {
@@ -61,8 +50,8 @@ function App(props) {
       <div className="App">
         <div className="container">
           <Routes>
-            <Route path='/' element={<PageEn mainData={mainData} data={data} />} />
-            <Route path='/arm' element={<ContentArm />} />
+            <Route path='/*' element={<PageEn mainData={mainData} data={data} />} />
+            <Route path='arm/*' element={<PageArm mainData={mainData} data={data} />} />
           </Routes>
         </div>
       </div>

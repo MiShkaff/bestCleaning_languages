@@ -3,7 +3,7 @@ const About = () => {
     // debugger
   return (
     <div className='about'>
-      about
+      there is a text about company
     </div>
   )
 }

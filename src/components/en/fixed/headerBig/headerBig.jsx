@@ -8,7 +8,7 @@ const HeaderBig = (props) => {
   return (
     <div className='header__big'>
         <HeaderLogo />
-        <HeaderList  
+        <HeaderList
           data={props.data} 
           aboutSelected = {props.aboutSelected} 
           aboutSetSelected={props.aboutSetSelected} 

@@ -21,7 +21,6 @@ const HeaderList = (props) => {
   //     document.removeEventListener('mousedown', handler)
   //   }
   // })
-  console.log(props.data)
   return (
     <ul className='headerList'>
       <li className="headerList__item">

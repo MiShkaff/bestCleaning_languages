@@ -3,7 +3,7 @@ import Header from '../en/UI/header/header'
 import Main from '../en/UI/main/main'
 import Footer from '../en/UI/footer/footer'
 
-const PageEn = (props) => {
+const PageArm = (props) => {
   return (
     <div>
         <Header 
@@ -16,4 +16,4 @@ const PageEn = (props) => {
   )
 }
 
-export default PageEn
+export default PageArm
